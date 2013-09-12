@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="css.css"/>
+<title>Twitter News</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+$( ".ex" ).effect( "slide", "1" );
+  $(".stats").css("visibility","hidden");
+$(".ex").hover(function(){
+  $(".stats").css("visibility","visible");
+  $( ".stats" ).effect( "slide", "1" );
+    $(".ex").css("border-color","gray");
+	$(".ex").css("box-shadow"," 3px 3px 2px #888888");
+  },function(){
+  $(".stats").css("visibility","hidden");
+  $(".ex").css("border-color","#E0E0E0");
+  $(".ex").css("box-shadow","none");
+});
+});
+</script>
+</head>
+<body>
+<div class=ex>
+<span>
+<img src="twitter.png" alt="Profile" width="20" height="20">
+</span>
+<p class=stats>
+0 Favorites
+1 Retweet
+</p>
+<P>
+<a class=user href="#">
+@JoeSmith
+</a>
+
+</p>
+
+<h6>
+This is an example of a minimalistic Tweet
+<a class=link href="#">
+www.examplelink.com
+</a>
+</h6>
+</div>
+
+
+</body>
+</html>
